@@ -1,0 +1,39 @@
+body{
+    background-color: #393E46;
+    font-family: 'Aclonica', sans-serif;
+}
+img{
+    width: 180px;
+}
+.container{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    font-size: x-large;
+    
+}
+.image{
+    display: inline-block;
+    text-align: center;
+}
+p{
+    color: #AD8B73;
+}
+h1{
+    margin-top: 50px;
+    font-size: 4rem;
+    color: #AD8B73;
+}
+footer{
+    margin: 40px;
+    color: aliceblue;
+    font-size: 17px;
+    text-align: center;
+}
+input{
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color:coral
+}

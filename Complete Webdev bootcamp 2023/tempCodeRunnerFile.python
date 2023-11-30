@@ -1,0 +1,38 @@
+import threading
+
+class Philosopher(threading.Thread):
+    running = True
+
+    def __init__(self, fork_left, fork_right):
+        threading.Thread.__init__(self)
+        self.fork_left = fork_left
+        self.fork_right = fork_right
+
+    def run(self):
+        while(self.running):
+            # thinking
+            print(f'Philosopher {self}: thinking...')
+        
+            # pick up forks
+            fork1, fork2 = self.fork_left, self.fork_right
+            # prevent deadlock by ensuring consistent order of picking up forks
+            if id(fork1) < id(fork2):
+                fork1, fork2 = fork2, fork1
+            with fork1:
+                with fork2:
+                    # eating
+                    print(f'Philosopher {self}: eating...')
+        
+if __name__ == "__main__":
+    # create 5 forks (locks)
+    forks = [threading.Lock() for _ in range(5)]
+
+    # create 5 philosophers
+    philosophers = [Philosopher(forks[i % 5], forks[(i + 1) % 5]) for i in range(5)]
+
+    for p in philosophers:
+        p.start()
+
+    # let the philosophers run for a while
+    time.sleep(10)
+    Philosopher.running = False

@@ -1,0 +1,27 @@
+
+.magma{
+    font-size: 60px;
+    font-family: cursive;
+    font-weight: 500;
+}
+body{
+    background-color: lightseagreen;
+}
+button{
+    height: 32px;
+    width: 6rem;
+    border-radius: 10px;
+    border: none;
+}
+a{
+    text-decoration: none;
+}
+#first_button{
+    width: 10px;
+}
+input{
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    border: none;
+}
