@@ -12,4 +12,4 @@ $("h1").click(function(){
 // });
 $("input").click(function(){
     $("h1").slideUp().animate({opacity: 0.2}).slideDown();
-});
+});https://www.figma.com/file/k9twzOISZwhjSRA5aIVwRx/Flux---Figma-Build-Tutorial-(Starter)-(Community)?type=design&node-id=203-2&mode=design&t=uPO7fUiE5KjYkHsm-11
