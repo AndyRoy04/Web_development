@@ -1,0 +1,19 @@
+My command line skills continue from here
+
+What i learnt
+1. Directory navigation (ls, cd, etc)
+2. Using touch, start, open, rmdir, mkdir
+
+    mkdir directoryName : creates a new directory
+    rmdir directoryName: removes an empty directory
+    rmdir -r directoryName: removes a directory
+
+    touch filename : Creates a file
+    start filename : opens on windows
+    open filename : opens the file on linuxOS and macOS
+
+    open -a ''app apth'' : entering the app path opens the file on that application
+    code filename : opens the file on VScode 
+
+
+Good bye...
