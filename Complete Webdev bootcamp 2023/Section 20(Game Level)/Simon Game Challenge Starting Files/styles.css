@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-  display: block;
+  display: inline;
   width: 50%;
   margin: auto;
 
@@ -24,6 +24,13 @@ body {
   width: 200px;
   border: 10px solid black;
   border-radius: 20%;
+}
+
+.user-score{
+  font-size: 1.75rem;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+  color: #fef2bf;
 }
 
 .game-over {
