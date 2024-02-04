@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "inquirer": "^9.2.13",
+    "qr-image": "^3.2.0"
+  },
+  "name": "qr_code_project",
+  "version": "1.0.0",
+  "description": "Building my first QR code project with node modules",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anderson Roy",
+  "license": "ISC"
+}
