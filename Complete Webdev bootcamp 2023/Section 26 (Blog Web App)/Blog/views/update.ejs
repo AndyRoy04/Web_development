@@ -1,0 +1,14 @@
+<%- include('partials/header.ejs') %>
+
+<div class="content">
+    <h1>Welcome to <strong class="strong">BlogIt Update</strong></h1>
+    <p>Update your Blog Below.</p>
+    <form action="/update" method="post">
+        <input type="text" class="create" name="create" placeholder="Enter blog title to Update" required>
+        <input type="text" class="create" name="create" placeholder="Enter New blog title" required>
+            <textarea type="me" class="create" name="blogCreate" placeholder="Enter blog" required></textarea>
+        <input type="submit" class="create blogSubmit update" value="Create Blog">
+    </form>
+  </div>
+
+  <%- include('partials/footer.ejs') %>
