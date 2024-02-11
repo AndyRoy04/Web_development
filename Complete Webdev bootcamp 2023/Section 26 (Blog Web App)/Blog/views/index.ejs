@@ -1,36 +1,16 @@
 <%- include('partials/header.ejs') %>
 
 <div class="content">
-  <h1>Welcome to <strong class="strong">BlogIt</strong></h1>
-  <h5>Your Blogs shall enter here.</h5><br>
-  <p>
-    A blog website is a platform where individuals or organizations can publish
-    and share their written content with an online audience. The website
-    typically consists of several components. First, there is a front-end
-    interface that users interact with, which includes the blog posts,
-    navigation menus, and other visual elements. Users can browse through
-    different blog posts, read the content, and leave comments.
-  </p>
-  <p>
-    Behind the scenes, the blog website has a back-end infrastructure that
-    handles various functions. It stores and manages the blog posts and
-    associated data in a database. When a user requests a specific blog post,
-    the back-end retrieves the relevant data and dynamically generates the
-    corresponding web page to display the content.
-  </p>
-  <p>
-    Additionally, blog websites often incorporate content management systems
-    (CMS) that allow authors to create, edit, and publish blog posts easily. The
-    CMS provides an interface for authors to write and format their content, add
-    images or multimedia, and manage comments. It also handles user
-    authentication and permissions, ensuring that only authorized individuals
-    can publish or modify blog posts.
-  </p>
-  <p>
-    Overall, a blog website combines front-end and back-end technologies to
-    provide an interactive platform for publishing and sharing written content
-    with a global audience.
-  </p>
+    <h1>Welcome to <strong class="strong">BlogIt</strong></h1>
+    <h6>Your Blogs where you want them and how you want them</h6>
+  <% if (locals.names && locals.messages) { %>
+   <br>
+<% for( var i = 0; i < names.length; i++ ) { %>
+    <h4><%= names[i] %></h4>
+    <hr />
+    <p><%= messages[i] %></p>
+<% } %>
+<% } %>
 </div>
 
 <%- include('partials/footer.ejs') %>
