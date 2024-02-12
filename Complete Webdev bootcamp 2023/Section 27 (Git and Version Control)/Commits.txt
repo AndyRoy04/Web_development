@@ -1,0 +1,12 @@
+Trying out git with the command line
+
+1. I just initilised this folder with the command git init. 
+2. Next I'll add it to my stgging area using the command 'git add'.
+3. Then I'll check its status in the stagging area using the command 'git status'.
+4. Finally commiting the file to my git repository with the command 'git commit -m "filname" '. 
+The -m flag is used to write the commit message.
+5. Use 'git log' to check the commits already made.
+6. Use 'git add *' to add all files to the stagging area
+7. use 'git diff filename' to check the difference between the present file and the previous commited file.
+Use 'git diff .' to check the above for each file in a stagging area
+8. Use 'git checkout filename' inorder to revert a file to its previous version. Extra 'git checkout .'
