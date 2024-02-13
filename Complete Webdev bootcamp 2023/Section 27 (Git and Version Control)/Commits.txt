@@ -10,3 +10,11 @@ The -m flag is used to write the commit message.
 7. use 'git diff filename' to check the difference between the present file and the previous commited file.
 Use 'git diff .' to check the above for each file in a stagging area
 8. Use 'git checkout filename' inorder to revert a file to its previous version. Extra 'git checkout .'
+
+#Move from Local repository to remote repository
+
+1. Creat a git repository on GitHub
+2. Copy the URL
+3. In your local repository, after adding and commiting filed, you can push this files to your remote repository using the following commands
+4. git remote add origin URL-copied : Used to initilised you local repository with the link to the remote repository
+5. git push -u origin branchName : Used to move our files from local repository to remote repository.
